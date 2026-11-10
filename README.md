@@ -32,15 +32,6 @@ Grab the latest `videodownloader_v5.exe` from the [**Releases**](../../releases)
 
 > Windows or your antivirus may show a warning because the app is unsigned. This is common for apps packaged with PyInstaller. The full source code is in this repo if you want to check it or build it yourself.
 
-## Run from source
-
-```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-pip install -r requirements.txt
-python videodownloader_v5.py
-```
-
 ## Usage
 
 1. Paste a video link into the text box.
@@ -48,13 +39,6 @@ python videodownloader_v5.py
 3. Click the folder button and choose where to save.
 4. Tick **recode video to wanted format** if you want the file converted (slower, needs ffmpeg).
 5. Click **download video** and wait for the bar to finish.
-
-## Build the .exe yourself
-
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed --collect-all customtkinter videodownloader_v5.py
-```
 
 The executable will be in the `dist/` folder.
 
